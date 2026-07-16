@@ -20,11 +20,6 @@ public class add_controller {
     public String healthCheck(){
         return "Health is ok";
     }
-//    @PostMapping("/add")
-//    public int add(int a, int b){
-//        int result = service.addService(a, b);
-//        return result;
-//    }
 
     @PostMapping("/add")
     public int AddResult(@RequestBody UserRequest userRequest){
