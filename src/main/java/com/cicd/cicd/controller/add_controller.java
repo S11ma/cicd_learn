@@ -3,11 +3,9 @@ package com.cicd.cicd.controller;
 import com.cicd.cicd.dto.UserRequest;
 import com.cicd.cicd.service.add_service;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "*")
 @RestController
 public class add_controller {
     private final add_service service;
