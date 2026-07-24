@@ -35,10 +35,8 @@ jobs:
       run: |
         mkdir -p /home/ubuntu/app
         
-        # 2. Copy newly compiled JAR to the production folder
         cp target/*.jar /home/ubuntu/app/app.jar
         
-        # 3. Restart systemd service
         sudo systemctl restart backend
 #          cd /backend-runner/_work/cicd_learn/cicd_learn
 #          git pull origin main
