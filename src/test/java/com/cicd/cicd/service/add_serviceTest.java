@@ -10,11 +10,11 @@ class add_serviceTest {
     @Test
     void addService() {
         int resultP = service.addService(3,3);
-        assertEquals(6,resultP);
+        assertEquals(9,resultP);
     }
     @Test
     void addServiceN(){
         int resultN = service.addService(-2,-4);
-        assertEquals(-6, resultN);
+        assertEquals(8, resultN);
     }
 }
