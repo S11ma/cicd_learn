@@ -32,7 +32,11 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Restart application
-      run: sudo systemctl restart backend
+      run:
+          cd /backend-runner/_work/cicd_learn/cicd_learn
+          git pull origin main
+          mvn clean package
+          sudo systemctl restart backend
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
